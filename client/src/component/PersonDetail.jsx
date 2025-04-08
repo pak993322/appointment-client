@@ -56,7 +56,7 @@ export default function PersonDetail() {
                   </div>
                 )}
                 <img
-                  src={`https://appointment-backend-production.up.railway.app/${data?.image}`}
+                  src={`https://backend-six-puce-13.vercel.app/${data?.image}`}
                   alt="Person's image"
                   className={`w-full h-[330px] object-cover transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
                   onLoad={handleImageLoad}
