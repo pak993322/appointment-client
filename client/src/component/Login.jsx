@@ -61,7 +61,7 @@ export default function Component() {
               I am writing to schedule an appointment with you at a convenient time. Could you please let me know your availability in the upcoming week?
             </p>
             <button onClick={() => loginWithRedirect()} className="bg-sky-400 text-white px-6 py-3 rounded-full hover:bg-sky-500 transition duration-300">
-              Get Started
+              Get Started bro
             </button>
           </div>
           <div className="md:w-1/2 relative">
