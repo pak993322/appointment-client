@@ -70,7 +70,7 @@ export default function Component() {
                   <div key={index} className="bg-gray-100 rounded-xl overflow-hidden shadow-md transition-transform hover:scale-105 flex flex-col">
                     <div className="relative pt-[100%] bg-white">
                       <img
-                        src={`https://appointment-backend-production.up.railway.app/${doctor.image}`}
+                        src={`https://backend-six-puce-13.vercel.app/${doctor.image}`}
                         alt={doctor.name}
                         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${loadedImages[doctor._id] ? 'opacity-100' : 'opacity-0'}`}
                         onLoad={() => handleImageLoad(doctor._id)}
