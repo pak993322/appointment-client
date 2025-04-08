@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const addPerson = async (formData) => {
-  const response = await axios.post('https://backend-steel-gamma.vercel.app/person/addPerson', formData, {
+  const response = await axios.post('https://apppintbackend-production.up.railway.app/person/addPerson', formData, {
     headers: {
       'Content-Type': 'multipart/form-data',
     },
@@ -11,7 +11,7 @@ export const addPerson = async (formData) => {
 
 export const addSlots = async (formData) => {
   console.log("formData",formData)
-  const response = await axios.post('https://backend-steel-gamma.vercel.app/person/personSlots', formData, {
+  const response = await axios.post('https://apppintbackend-production.up.railway.app/person/personSlots', formData, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -21,7 +21,7 @@ export const addSlots = async (formData) => {
 
 
 export const getPerson = async () => {
-  const response = await axios.get('https://backend-steel-gamma.vercel.app/person/getPerson', {
+  const response = await axios.get('https://apppintbackend-production.up.railway.app/person/getPerson', {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -29,7 +29,7 @@ export const getPerson = async () => {
     return response.data;  
 };
 export const getPersonById = async (id) => {
-  const response = await axios.get(`https://backend-steel-gamma.vercel.app/person/getPersonById/${id}`, {
+  const response = await axios.get(`https://apppintbackend-production.up.railway.app/person/getPersonById/${id}`, {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -37,7 +37,7 @@ export const getPersonById = async (id) => {
     return response.data;  
 };
 export const getSlots = async (id,day) => {
-  const response = await axios.get(`https://backend-steel-gamma.vercel.app/person/getSlots/${id}/${day}`, {
+  const response = await axios.get(`https://apppintbackend-production.up.railway.app/person/getSlots/${id}/${day}`, {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -48,7 +48,7 @@ export const getSlots = async (id,day) => {
 
 export const bookAppointment = async (formData) => {
   console.log("formData",formData)
-  const response = await axios.post('https://backend-steel-gamma.vercel.app/booked/bookedApp', formData, {
+  const response = await axios.post('https://apppintbackend-production.up.railway.app/booked/bookedApp', formData, {
     headers: {
       'Content-Type': 'application/json',
     },
@@ -58,7 +58,7 @@ export const bookAppointment = async (formData) => {
 
 export const getAppDateTime = async (id) => {
   try {
-    const response = await axios.get(`https://backend-steel-gamma.vercel.app/booked/getAppointments/${id}`, {
+    const response = await axios.get(`https://apppintbackend-production.up.railway.app/booked/getAppointments/${id}`, {
       headers: {
         'Content-Type': 'application/json',
       },
